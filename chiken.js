@@ -240,6 +240,7 @@ client.on('message', function (message) {
     let botEmbed = new Discord.RichEmbed()
       .setTitle("Chiken Bot Help")
       .setDescription(`litearlly just type "chiken"\nbut not "chicken"\nbc then it wont work\n...thats it`)
+      .addField("Code, if u want it", "https://goo.gl/c37Q8z")
       .setColor("#7fc0ff")
       .setThumbnail(chikenPic)
 
