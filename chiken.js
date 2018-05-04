@@ -10,13 +10,14 @@ const prefix = config.prefix;
 
 client.login(discordToken);
 
-client.on('ready', function () {
+client.on('ready', function() {
   console.log(`${client.user.username} is online in ${client.guilds.size} server(s)`);
   client.user.setActivity("c!help || CHIKEN, NOT CHICKEN");
 });
 
-client.on('message', function (message) {
+client.on('message', function(message) {
 
+  //chikens
   chiken1 = "./chikens/chiken1.jpeg";
   chiken2 = "./chikens/chiken2.jpeg";
   chiken3 = "./chikens/chiken3.jpeg";
@@ -48,185 +49,216 @@ client.on('message', function (message) {
   chiken29 = "./chikens/chiken29.jpeg";
   chiken30 = "./chikens/chiken30.jpeg";
 
+  //send chikens
   if (message.content.toLowerCase().includes("chiken") && message.member.id != client.user.id) {
     number = 30;
     var random = Math.floor(Math.random() * (number - 1 + 1) + 1);
     switch (random) {
       case 1:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken1]
         });
         break;
       case 2:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken2]
         });
         break;
       case 3:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken3]
         });
         break;
       case 4:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken4]
         });
         break;
       case 5:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken5]
         });
         break;
       case 6:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken6]
         });
         break;
       case 7:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken7]
         });
         break;
       case 8:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken8]
         });
         break;
       case 9:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken9]
         });
         break;
       case 10:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken10]
         });
         break;
       case 11:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken11]
         });
         break;
       case 12:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken12]
         });
         break;
       case 13:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken13]
         });
         break;
       case 14:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken14]
         });
         break;
       case 15:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken15]
         });
         break;
       case 16:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken16]
         });
         break;
       case 17:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken17]
         });
         break;
       case 18:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken18]
         });
         break;
       case 19:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken19]
         });
         break;
       case 20:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken20]
         });
         break;
       case 21:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken21]
         });
         break;
       case 22:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken22]
         });
         break;
       case 23:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken23]
         });
         break;
       case 24:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken24]
         });
         break;
       case 25:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken25]
         });
         break;
       case 26:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken26]
         });
         break;
       case 27:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken27]
         });
         break;
       case 28:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken28]
         });
         break;
       case 29:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken29]
         });
         break;
       case 30:
+        message.react('🐔');
         message.channel.send("did someone say...chiken?");
         message.channel.send({
           files: [chiken30]
@@ -235,6 +267,7 @@ client.on('message', function (message) {
     }
   }
 
+  //help command
   if (message.content.toLowerCase().startsWith("c!help")) {
     let chikenPic = client.user.displayAvatarURL;
     let botEmbed = new Discord.RichEmbed()
@@ -244,6 +277,6 @@ client.on('message', function (message) {
       .setColor("#7fc0ff")
       .setThumbnail(chikenPic)
 
-    message.channel.send(botEmbed);    
+    message.channel.send(botEmbed);
   }
 });
