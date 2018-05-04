@@ -8,6 +8,7 @@ var config = JSON.parse(fs.readFileSync('./settings.json', 'utf-8'));
 const discordToken = config.discordToken;
 const prefix = config.prefix;
 
+
 client.login(discordToken);
 
 client.on('ready', function() {
@@ -16,6 +17,7 @@ client.on('ready', function() {
 });
 
 client.on('message', function(message) {
+  let logsChannel = message.guild.channels.find(`name`, "bot-logs");
 
   //chikens
   chiken1 = "./chikens/chiken1.jpeg";
@@ -55,214 +57,484 @@ client.on('message', function(message) {
     var random = Math.floor(Math.random() * (number - 1 + 1) + 1);
     switch (random) {
       case 1:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken1]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken1]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken1]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 2:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken2]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken2]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken2]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 3:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken3]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken3]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken3]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 4:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken4]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken4]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken4]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 5:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken5]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken5]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken5]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 6:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken6]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken6]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken6]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 7:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken7]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken7]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken7]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 8:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken8]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken8]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken8]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 9:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken9]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken9]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken9]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 10:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken10]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken10]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken10]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 11:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken11]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken11]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken11]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 12:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken12]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken12]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken12]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 13:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken13]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken13]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken13]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 14:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken14]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken14]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken14]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 15:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken15]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken15]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken15]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 16:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken16]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken16]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken16]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 17:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken17]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken17]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken17]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 18:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken18]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken18]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken18]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 19:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken19]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken19]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken19]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 20:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken20]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken20]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken20]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 21:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken21]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken21]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken21]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 22:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken22]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken22]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken22]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 23:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken23]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken23]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken23]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 24:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken24]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken24]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken24]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 25:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken25]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken25]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken25]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 26:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken26]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken26]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken26]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 27:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken27]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken27]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken27]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 28:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken28]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken28]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken28]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 29:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken29]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken29]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken29]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
       case 30:
-        message.react('🐔');
-        message.channel.send("did someone say...chiken?");
-        message.channel.send({
-          files: [chiken30]
-        });
+        if (!logsChannel) {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken30]
+          });
+        } else {
+          message.react('🐔');
+          message.channel.send("did someone say...chiken?");
+          message.channel.send({
+            files: [chiken30]
+          });
+          return logsChannel.send(`**${message.member.displayName}** got a :chicken:!!!`);
+        }
         break;
     }
   }
