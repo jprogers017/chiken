@@ -1,1 +1,6 @@
 settings.*
+node_modules/
+#install:
+#npm install -g nodemon
+#npm install discord.js 
+#npm install fs
