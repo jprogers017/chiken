@@ -539,6 +539,16 @@ client.on('message', function(message) {
     }
   }
 
+  //react to "chicken"
+  if ((message.content.toLowerCase().includes("chicken") && message.member.id != client.user.id)) {
+    if (!logsChannel) {
+      message.react('🐔');
+    } else {
+      message.react('🐔');
+      return logsChannel.send(`reacted to **${message.member.displayName}**'s "chicken" with :chicken:`);
+    }
+  }
+
   //help command
   if (message.content.toLowerCase().startsWith("c!help")) {
     let chikenPic = client.user.displayAvatarURL;
