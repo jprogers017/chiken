@@ -11,12 +11,12 @@ const prefix = config.prefix;
 
 client.login(discordToken);
 
-client.on('ready', function() {
+client.on('ready', function () {
   console.log(`${client.user.username} is online in ${client.guilds.size} server(s)`);
   client.user.setActivity("c!help || CHIKEN, NOT CHICKEN");
 });
 
-client.on('message', function(message) {
+client.on('message', function (message) {
   let logsChannel = message.guild.channels.find(`name`, "bot-logs");
 
   //chikens
@@ -58,13 +58,11 @@ client.on('message', function(message) {
     switch (random) {
       case 1:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken1]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken1]
@@ -74,13 +72,11 @@ client.on('message', function(message) {
         break;
       case 2:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken2]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken2]
@@ -90,13 +86,11 @@ client.on('message', function(message) {
         break;
       case 3:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken3]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken3]
@@ -106,13 +100,11 @@ client.on('message', function(message) {
         break;
       case 4:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken4]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken4]
@@ -122,13 +114,11 @@ client.on('message', function(message) {
         break;
       case 5:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken5]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken5]
@@ -138,13 +128,11 @@ client.on('message', function(message) {
         break;
       case 6:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken6]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken6]
@@ -154,13 +142,11 @@ client.on('message', function(message) {
         break;
       case 7:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken7]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken7]
@@ -170,13 +156,11 @@ client.on('message', function(message) {
         break;
       case 8:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken8]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken8]
@@ -186,13 +170,11 @@ client.on('message', function(message) {
         break;
       case 9:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken9]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken9]
@@ -202,13 +184,11 @@ client.on('message', function(message) {
         break;
       case 10:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken10]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken10]
@@ -218,13 +198,11 @@ client.on('message', function(message) {
         break;
       case 11:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken11]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken11]
@@ -234,13 +212,11 @@ client.on('message', function(message) {
         break;
       case 12:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken12]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken12]
@@ -250,13 +226,11 @@ client.on('message', function(message) {
         break;
       case 13:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken13]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken13]
@@ -266,13 +240,11 @@ client.on('message', function(message) {
         break;
       case 14:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken14]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken14]
@@ -282,13 +254,11 @@ client.on('message', function(message) {
         break;
       case 15:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken15]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken15]
@@ -298,13 +268,11 @@ client.on('message', function(message) {
         break;
       case 16:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken16]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken16]
@@ -314,13 +282,11 @@ client.on('message', function(message) {
         break;
       case 17:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken17]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken17]
@@ -330,13 +296,11 @@ client.on('message', function(message) {
         break;
       case 18:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken18]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken18]
@@ -346,13 +310,11 @@ client.on('message', function(message) {
         break;
       case 19:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken19]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken19]
@@ -362,13 +324,11 @@ client.on('message', function(message) {
         break;
       case 20:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken20]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken20]
@@ -378,13 +338,11 @@ client.on('message', function(message) {
         break;
       case 21:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken21]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken21]
@@ -394,13 +352,11 @@ client.on('message', function(message) {
         break;
       case 22:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken22]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken22]
@@ -410,13 +366,11 @@ client.on('message', function(message) {
         break;
       case 23:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken23]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken23]
@@ -426,13 +380,11 @@ client.on('message', function(message) {
         break;
       case 24:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken24]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken24]
@@ -442,13 +394,11 @@ client.on('message', function(message) {
         break;
       case 25:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken25]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken25]
@@ -458,13 +408,11 @@ client.on('message', function(message) {
         break;
       case 26:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken26]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken26]
@@ -474,13 +422,11 @@ client.on('message', function(message) {
         break;
       case 27:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken27]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken27]
@@ -490,13 +436,11 @@ client.on('message', function(message) {
         break;
       case 28:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken28]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken28]
@@ -506,13 +450,11 @@ client.on('message', function(message) {
         break;
       case 29:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken29]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken29]
@@ -522,13 +464,11 @@ client.on('message', function(message) {
         break;
       case 30:
         if (!logsChannel) {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken30]
           });
         } else {
-          message.react('🐔');
           message.channel.send("did someone say...chiken?");
           message.channel.send({
             files: [chiken30]
